@@ -19,3 +19,15 @@
     font-weight: bold;
     font-size: 1.2em;
   }
+  /* Man css */
+  .man {
+    fill: transparent;
+    stroke: black;
+
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+.hide {
+    display: none;
+}
