@@ -31,3 +31,186 @@
 .hide {
     display: none;
 }
+/* Display Board */
+
+/* DisplayBoard.css */
+
+.display-board-container {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .display-board-letter {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+    background-color: white;
+    border: 2px solid #dee2e6;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+  }
+  
+  /* Hover effects */
+  .display-board-letter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    border-color: #adb5bd;
+  }
+  
+  /* For correctly guessed letters */
+  .display-board-letter.revealed {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+  }
+  
+  /* For Hangman's revealed word (game over) */
+  .display-board-container.game-over .display-board-letter {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .display-board-letter {
+      width: 40px;
+      height: 40px;
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .display-board-letter {
+      width: 35px;
+      height: 35px;
+      font-size: 1.2rem;
+    }
+    .display-board-container {
+      gap: 0.3rem;
+    }
+  }
+
+  /* Input Css */
+  /* Keyboard.css */
+
+/* Keyboard Container */
+.Keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Keyboard Buttons */
+  .keyboard-btn {
+    width: 40px;
+    height: 80px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hover State */
+  .keyboard-btn:hover:not(.used) {
+    background-color: #e3f2fd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Active State */
+  .keyboard-btn:active:not(.used) {
+    transform: translateY(0);
+  }
+  
+  /* Used Letters */
+  .keyboard-btn.used {
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
+  }
+  
+  /* Correct Letters */
+  .keyboard-btn.correct {
+    background-color: #2ecc71;
+    color: white;
+  }
+  
+  /* Wrong Letters */
+  .keyboard-btn.wrong {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Keyboard-container {
+      gap: 0.4rem;
+      padding: 0.8rem;
+    }
+    
+    .keyboard-btn {
+      width: 35px;
+      height: 45px;
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Keyboard-container {
+      gap: 0.3rem;
+      padding: 0.6rem;
+    }
+    
+    .keyboard-btn {
+      width: 30px;
+      height: 40px;
+      font-size: 1rem;
+    }
+  }
+  
+  /* Special Keys Row (if you add space/enter later) */
+  .special-keys {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .special-key {
+    width: auto;
+    padding: 0 1rem;
+  }

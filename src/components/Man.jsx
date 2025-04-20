@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Man() {
+export default function Man({wrongGuesses}) {
   return (
     <div className="man-container">
                 <svg className="man" height="250" width="200">
