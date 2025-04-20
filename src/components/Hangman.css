@@ -1,0 +1,124 @@
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-title {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.man-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.man {
+    stroke: #2c3e50;
+    stroke-width: 4;
+    stroke-linecap: round;
+}
+
+.hide {
+    display: none;
+}
+
+.word-display {
+    margin: 30px 0;
+    letter-spacing: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.hint-text {
+    color: #666;
+    font-style: italic;
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.keyboard-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.keyboard-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.keyboard-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+
+.keyboard-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.game-over {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.winner {
+    color: #27ae60;
+}
+
+.loser {
+    color: #c0392b;
+}
+
+.game-result {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.final-word {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+    font-size: 1.1rem;
+}
+
+.stat-item {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    color: #2c3e50;
+} 
