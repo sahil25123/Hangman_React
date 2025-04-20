@@ -1,6 +1,7 @@
 ## Hangman Game - React
 
  # A classic Hangman word guessing game built with React. Try to guess the hidden word before the hangman is fully drawn!
+![image](https://github.com/user-attachments/assets/dcaf15f4-48d7-474f-9117-0e0e9667876e)
 
 Features
 🎮 Interactive gameplay with keyboard support
